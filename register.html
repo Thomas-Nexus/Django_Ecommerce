@@ -1,0 +1,28 @@
+{% extends 'inheritance.html' %}
+{% load static %}
+{% block content %}
+
+</br>
+</br>
+</br>
+<hr>
+<hr>
+<center>
+<form method="POST" action="" style="color:white">
+
+    {% csrf_token %}
+    {% for each in form %}
+        {{ each.label}}
+        {{ each }}
+    {% endfor %}
+
+    <input type="submit" name="CREATE USER">
+    </br>
+    </br>
+    {{ form.errors }}
+    <h6> If you are already a user, please <a href="/login" style="color:gold">login</a> here.</h6>
+
+</form>
+
+</center>
+{% endblock %}
