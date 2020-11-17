@@ -1,3 +1,5 @@
 # Django_Full_Ecommerce_Store
 
-Coming soon.
+## Status
+
+Project ongoing.
