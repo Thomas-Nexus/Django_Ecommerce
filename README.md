@@ -10,13 +10,28 @@ A 007 themed ecommerce site with full add to cart and checkout functionality. Th
    - HTML5
    - CSS
 
-<b>Editor:</b> PyCharm/Command Line
-
+<b>Editor:</b> 
+    
+   - PyCharm/Command
+   - Command Line 
 
 ## Setup
 
 
+## User Features
 
+Users are able to complete the following actions:
+
+   - Register an account
+   - Amend profile details (name, email, profile picture etc).
+   - Login
+   - Logout
+   - Browse films/actors
+   - Watch trailers for films
+   - Add any films to a cart
+   - Amend the quantity of items
+   - Checkout with the aformentioned items
+   
 
 ## Products App
 
