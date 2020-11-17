@@ -1,0 +1,19 @@
+{% extends 'inheritance.html' %}
+{% block content %}
+
+<body style="color:white">
+</br>
+</br>
+
+<p> Do you really want to delete your order?</p>
+
+<form action="{% url 'deleteorder' product.id %}" method="POST">
+
+    {% csrf_token %}
+    <a class="btn btn-warning" href="/orders">CANCEL</a>
+    <input class="btn btn-danger" type="submit" name="SUBMIT">
+
+</form>
+</body>
+{% endblock %}
+
