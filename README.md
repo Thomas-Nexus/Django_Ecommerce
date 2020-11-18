@@ -141,9 +141,10 @@ All HTML files that are used in conjunction with the views.py will be included b
     - spectre
     - notimetodie
     
-## Screenshot Example
+## Screenshot Example (Film Page)
     
-   
+![Spectre](https://user-images.githubusercontent.com/72507931/99554599-49de6e00-29b7-11eb-9681-7922c27d3a91.JPG)
+
 ## Status
 
 Project ongoing.
