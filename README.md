@@ -30,13 +30,57 @@ Users are able to complete the following actions:
    - Checkout with the aformentioned items
    
 
-## Products Application: Folder Structure Summary
+## Products Application: Folder Structure Skeleton Map
 
 <b>URL's (Main Project Folder)</b>
 
+Dynamic:
+ - createorder
+ - updateorder
+ - deleteorder
+ - customer
+ - products
+ 
+Static:
+- home
+- admin
+- shop
+- orders
+- profile
+- login
+- logout
+- register
+- cart
+- checkout
+- actors
+- films
+- casinoroyale
+- quantumofsolace
+- skyfall
+- spectre
+- notimetodie
+
+
 <b>Models</b>
 
+- Customer (user, name, phone, email, date, profile image)
+- Tag (name)
+- Products (title, description, price, summary, image, tags)
+- Orders (customer, product, date, complete, status)
+- CartItem (product, order, quantity, date added)
+- Shipping (customer, order, address, city, postcode, country, date added)
+
 <b>Views</b>
+
+- homeview              - orders
+- films
+- actors
+- casinoroyale
+- quantumofsolace
+- skyfall
+- spectre
+- notimetodie
+- orders
 
 <b>Forms</b>
 
@@ -72,6 +116,8 @@ All HTML files that are used in conjunction with the views.py will be included b
     - skyfall
     - spectre
     - notimetodie
+    
+## Screenshot Example
     
    
 ## Status
