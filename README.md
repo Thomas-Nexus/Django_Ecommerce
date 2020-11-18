@@ -72,33 +72,33 @@ Static:
 
 <b>Views</b>
 
-- homeview             
-- films
-- actors
-- casinoroyale
-- quantumofsolace
-- skyfall
-- spectre
-- notimetodie
-- orders
-- customer
-- products
-- product detail view
-- cart
-- checkout
-- register
-- login_p
-- logout_p
-- createorder
-- updateorder
-- deleteorder
-- product_form
+    - homeview             
+    - films
+    - actors
+    - casinoroyale
+    - quantumofsolace
+    - skyfall
+    - spectre
+    - notimetodie
+    - orders
+    - customer
+    - products
+    - product detail view
+    - cart
+    - checkout
+    - register
+    - login_p
+    - logout_p
+    - createorder
+    - updateorder
+    - deleteorder
+    - product_form
 
 <b>Forms</b>
 
-- RegisterUserForm
-- ProfileForm
-- OrdersForm
+    - RegisterUserForm
+    - ProfileForm
+    - OrdersForm
 
 <b>Admin</b>
 
@@ -109,8 +109,8 @@ Registering all 6 models.
 
 Two decorators are used for access purposes differentiating between admin and customer groups:
 
- - unauthenticated_user
- - allowed_users
+    - unauthenticated_user
+    - allowed_users
 
 A static folder is also used (including sub dirs of css, images and profile images) and implemented into settings.
 
