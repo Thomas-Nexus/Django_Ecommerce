@@ -1,6 +1,6 @@
 # Django_Full_Ecommerce_Store
 
-A 007 themed ecommerce site with full add to cart and checkout functionality. This was created in Django with HTML and CSS front-end development.
+A 007 themed ecommerce site with full add to cart and checkout functionality. This is being created in Django with HTML and CSS front-end development. The project is ongoing and further code/screenshots will be included throughout November.
 
 ## Technologies
 
@@ -16,7 +16,6 @@ A 007 themed ecommerce site with full add to cart and checkout functionality. Th
    - Command Line 
 
 ## Setup
-
 
 ## User Features
 
