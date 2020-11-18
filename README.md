@@ -34,41 +34,41 @@ Users are able to complete the following actions:
 
 <b>URL's (Main Project Folder)</b>
 
-Dynamic:
- - createorder
- - updateorder
- - deleteorder
- - customer
- - products
+    Dynamic:
+    - createorder
+    - updateorder
+    - deleteorder
+    - customer
+    - products
  
-Static:
-- home
-- admin
-- shop
-- orders
-- profile
-- login
-- logout
-- register
-- cart
-- checkout
-- actors
-- films
-- casinoroyale
-- quantumofsolace
-- skyfall
-- spectre
-- notimetodie
+    Static:
+    - home
+    - admin
+    - shop
+    - orders
+    - profile
+    - login
+    - logout
+    - register
+    - cart
+    - checkout
+    - actors
+    - films
+    - casinoroyale
+    - quantumofsolace
+    - skyfall
+    - spectre
+    - notimetodie
 
 
 <b>Models</b>
 
-- Customer (user, name, phone, email, date, profile image)
-- Tag (name)
-- Products (title, description, price, summary, image, tags)
-- Orders (customer, product, date, complete, status)
-- CartItem (product, order, quantity, date added)
-- Shipping (customer, order, address, city, postcode, country, date added)
+    - Customer (user, name, phone, email, date, profile image)
+    - Tag (name)
+    - Products (title, description, price, summary, image, tags)
+    - Orders (customer, product, date, complete, status)
+    - CartItem (product, order, quantity, date added)
+    - Shipping (customer, order, address, city, postcode, country, date added)
 
 <b>Views</b>
 
