@@ -15,8 +15,6 @@ A 007 themed ecommerce site with full add to cart and checkout functionality. Th
    - PyCharm/Command
    - Command Line 
 
-## Setup
-
 ## User Features
 
 Users are able to complete the following actions:
@@ -32,24 +30,50 @@ Users are able to complete the following actions:
    - Checkout with the aformentioned items
    
 
-## Products App
+## Products Application: Folder Structure Summary
+
+<b>URL's (Main Project Folder)</b>
 
 <b>Models</b>
 
 <b>Views</b>
 
-<b>URL's</b>
+<b>Forms</b>
 
+<b>Admin</b>
 
-## Templates
+<b>Decorators</b>
 
+A static folder is also used (including sub dirs of css, images and profile images) and implemented into settings.
 
-## Shop Templates
+## Templates (HTML): Folder Structure Summary
 
+All HTML files that are used in conjunction with the views.py will be included below (also will be attached to the repository):
 
-
-
-
+    - home
+    - cart
+    - checkout
+    - createorder (admin only)
+    - deleteorder (admin only)
+    - customers (admin only)
+    - orders (admin only)
+    - detail
+    - login
+    - logout
+    - products_shop
+    - register
+    
+    - actors
+    - films
+    - inheritance
+    - navbar
+    - casinoroyale
+    - quantumofsolace
+    - skyfall
+    - spectre
+    - notimetodie
+    
+   
 ## Status
 
 Project ongoing.
