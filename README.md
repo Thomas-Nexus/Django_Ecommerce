@@ -1,6 +1,6 @@
 # Django_Full_Ecommerce_Store
 
-A 007 themed ecommerce site with full add to cart and checkout functionality. This is being created in Django with HTML and CSS front-end development. The project is ongoing and further code/screenshots will be included throughout November.
+A 007 themed ecommerce site with full add to cart and checkout functionality. This is being created in Django with HTML and CSS front-end development.
 
 ## Technologies
 
@@ -17,17 +17,25 @@ A 007 themed ecommerce site with full add to cart and checkout functionality. Th
 
 ## User Features
 
-Users are able to complete the following actions:
+Customers are able to complete the following actions:
 
    - Register an account
    - Amend profile details (name, email, profile picture etc).
    - Login
    - Logout
    - Browse films/actors
+   - Submit favourite film/actor
    - Watch trailers for films
    - Add any films to a cart
    - Amend the quantity of items
-   - Checkout with the aformentioned items
+   - Delete cart items
+   - Checkout with the aformentioned items via completion of address and payment forms.
+   
+Admin users are given specific permissions and are able to view an order/customer panel summarising all inputted data. 
+
+Admin users are not permitted to access the shopping cart.
+
+  
    
 
 ## Products Application: Folder Structure Skeleton Map
@@ -147,4 +155,3 @@ All HTML files that are used in conjunction with the views.py will be included b
 
 ## Status
 
-Project ongoing.
