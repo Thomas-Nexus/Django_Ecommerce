@@ -36,84 +36,7 @@ Admin users are given specific permissions and are able to view an order/custome
 Admin users are not permitted to access the shopping cart.
 
   
-   
-
-## Products Application: Folder Structure Skeleton Map
-
-<b>URL's (Main Project Folder)</b>
-
-    Dynamic:
-    - createorder
-    - updateorder
-    - deleteorder
-    - customer
-    - products
- 
-    Static:
-    - home
-    - admin
-    - shop
-    - orders
-    - profile
-    - login
-    - logout
-    - register
-    - cart
-    - checkout
-    - actors
-    - films
-    - casinoroyale
-    - quantumofsolace
-    - skyfall
-    - spectre
-    - notimetodie
-
-
-<b>Models</b>
-
-    - Customer (user, name, phone, email, date, profile image)
-    - Tag (name)
-    - Products (title, description, price, summary, image, tags)
-    - Orders (customer, product, date, complete, status)
-    - CartItem (product, order, quantity, date added)
-    - Shipping (customer, order, address, city, postcode, country, date added)
-
-<b>Views</b>
-
-    - homeview             
-    - films
-    - actors
-    - casinoroyale
-    - quantumofsolace
-    - skyfall
-    - spectre
-    - notimetodie
-    - orders
-    - customer
-    - products
-    - product detail view
-    - cart
-    - checkout
-    - register
-    - login_p
-    - logout_p
-    - createorder
-    - updateorder
-    - deleteorder
-    - product_form
-
-<b>Forms</b>
-
-    - RegisterUserForm
-    - ProfileForm
-    - OrdersForm
-
-<b>Admin</b>
-
-Registering all 6 models.
-
-
-<b>Decorators</b>
+<b>Permissions </b>
 
 Two decorators are used for access purposes differentiating between admin and customer groups:
 
@@ -122,32 +45,6 @@ Two decorators are used for access purposes differentiating between admin and cu
 
 A static folder is also used (including sub dirs of css, images and profile images) and implemented into settings.
 
-## Templates (HTML): Folder Structure Summary
-
-All HTML files that are used in conjunction with the views.py will be included below (also will be attached to the repository):
-
-    - home
-    - cart
-    - checkout
-    - createorder (admin only)
-    - deleteorder (admin only)
-    - customers (admin only)
-    - orders (admin only)
-    - detail
-    - login
-    - logout
-    - products_shop
-    - register
-    
-    - actors
-    - films
-    - inheritance
-    - navbar
-    - casinoroyale
-    - quantumofsolace
-    - skyfall
-    - spectre
-    - notimetodie
     
 ## Screenshot Example (Film Page)
     
