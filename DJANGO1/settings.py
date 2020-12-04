@@ -132,5 +132,3 @@ MEDIA_ROOT = BASE_DIR/'static/images'
 STATICFILES_DIRS = [
     BASE_DIR/'static/',
 ]
-
-#MEDIA_ROOT = BASE_DIR/'static/profile_images'
