@@ -32,7 +32,7 @@ Customers are able to complete the following actions:
    - Checkout with the aformentioned items via completion of address and payment forms.
    
 
-<b>Permissions </b>
+## Permissions
 
 Admin users are given specific permissions and are able to view an order/customer panel summarising all core data. 
 
