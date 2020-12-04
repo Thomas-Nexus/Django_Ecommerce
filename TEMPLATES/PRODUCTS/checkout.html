@@ -1,0 +1,51 @@
+{% extends 'inheritance.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+
+</br>
+</br>
+</br>
+<center>
+    <h3 style="color:gold"> CHECKOUT </h3>
+    <hr>
+    <hr>
+    <hr>
+    <div class="col-lg-6">
+        <div class="box-element">
+         <hr>
+         <h4 style="color:gold"> SUMMARY - TOTAL: ${{ total }} </h4>
+
+            <div class="cart-row" style="color:white">
+             {% for each in items %}
+                 <div style="flex:2"><img class="row-image" src="{{ each.product.image.URL }}"></div>
+                    <img width="90" src="{{ each.product.image.url }}">
+                 <hr>
+                 <div style="flex:2"><p> {{ each.product.title }} | {{ each.product.price }} x {{ each.quantity }} </p></div>
+             {% endfor %}
+             </br>
+             <a class="btn btn-outline-light" href="/cart"> BACK TO CART </a>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="col-lg-4">
+            <div class="box-element" id="form-wrapper">
+                <div class="form-group">
+                    <form id="form" method="POST" style="color: gold">
+                        <h5 style="color:white"> SHIPPING INFORMATION </h5>
+                         <hr>
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        </br>
+                        <input type="submit" class="btn btn-success" style="color:black" value="COMPLETE ORDER">
+                    </form>
+                </div>
+            </div>
+        </div>
+</br>
+</br>
+</br>
+</center>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'inheritance.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+</br>
+</br>
+<hr>
+<hr>
+<center>
+    <h3 style="color:white">REGISTER</h3>
+</br>
+</br>
+</br>
+
+        <div class="col-lg-6">
+            <div class="box-element" id="form-wrapper">
+                <div class="form-group">
+                    <form id="form" method="POST" style="color: gold">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <input type="submit" class="btn btn-success" style="color:black" value="REGISTER">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </br>
+
+    </br>
+    {{ form.errors }}
+    <h6 style="color:white"> If you are already a user, please <a href="/login" style="color:gold">login</a> here.</h6>
+    </br>
+    </br>
+</center>
+{% endblock %}

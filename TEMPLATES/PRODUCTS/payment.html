@@ -1,0 +1,33 @@
+{% extends 'inheritance.html' %}
+{% block content %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+<center>
+</br>
+</br>
+</br>
+<h3 style="color:gold"> PAYMENT INFORMATION </h3>
+    <hr>
+    <hr>
+    <p style="color:white"> Please fill in your details to complete your order. </p>
+    <hr>
+    <div class="col-lg-4">
+            <div class="box-element" id="form-wrapper">
+                <div class="form-group">
+                    <form id="form" method="POST" style="color: gold">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        </br>
+                        <input id="make-payment" type="submit" class="btn btn-success" style="color:black" value="COMPLETE PAYMENT DETAILS">
+                    </form>
+                </div>
+            </div>
+        </div>
+<hr>
+</br>
+</br>
+</br>
+</center>
+
+{% endblock %}

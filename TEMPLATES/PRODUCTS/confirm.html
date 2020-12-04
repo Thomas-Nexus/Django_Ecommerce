@@ -1,0 +1,37 @@
+{% extends 'inheritance.html' %}
+{% block content %}
+
+</br>
+</br>
+</br>
+</br>
+<center>
+
+
+    <h4 style="color:white"> CONFIRM ORDER </h4>
+    </br>
+    </br>
+    </br>
+    </br>
+    <h6 style="color:white"> TOTAL: $ {{ total }}
+     </br>
+     </br>
+
+        {% for each in cart %}
+        <div> {{ each.product.title }} X {{ each.quantity }} </div></br>
+        {% endfor %}
+    </h6>
+    </br>
+    </br>
+    <a class="btn btn-success" href="{% url 'PRODUCTS:final' %}"> CONFIRM</a>
+
+
+
+</br>
+
+
+
+</center>
+
+
+{% endblock %}

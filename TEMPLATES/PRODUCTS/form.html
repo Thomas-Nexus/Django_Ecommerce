@@ -1,0 +1,15 @@
+{% extends 'inheritance.html' %}
+{% block content %}
+
+
+<form action='.' style="color:yellow" method="POST">{% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit" value="SAVE"/>
+
+</form>
+
+
+
+{% endblock %}

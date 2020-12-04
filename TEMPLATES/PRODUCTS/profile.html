@@ -1,0 +1,32 @@
+{% extends 'inheritance.html' %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+</br>
+</br>
+</br>
+<center>
+<table style="color:white">
+          <h2 style="color:white">PROFILE </h2>
+          <hr>
+          <p style="color:white"> Username: {{ user }} | Email: {{ user.email }} | Phone: {{ user.customer.phone }}</p>
+          <p style="color:white"> Date Created: {{user.customer.date }}</p>
+
+          <img class="profile-pic"
+          src="{{ request.user.customer.profile_pic.url }}" width="200">
+          <hr>
+     </table>
+
+     <form method="POST" enctype="multipart/form-data" style="color:white">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <hr>
+          <input class="btn btn-success" type="submit" value="CHANGE DETAILS" style="color:black">
+          <hr>
+          <hr>
+     </form>
+
+</center>
+
+{% endblock %}

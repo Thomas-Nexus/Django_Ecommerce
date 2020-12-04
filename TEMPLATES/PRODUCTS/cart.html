@@ -1,0 +1,55 @@
+{% extends 'inheritance.html' %}
+{% csrf_token %}
+{% load static %}
+{% block content %}
+
+</br>
+</br>
+<center>
+</br>
+    <h3 style="color:gold">  CART </h3>
+</br>
+</br>
+
+    <div class="col-lg-8">
+
+            </br>
+            </br>
+           <table class="table" style="color:white" bgcolor="#696666">
+               <tr>
+                   <td><strong> TOTAL | ${{ total }}</strong></td>
+               </tr>
+
+                <tr style="color:gold">
+                   <td> PRODUCT </td>
+                   <td>         </td>
+                   <td> IMAGE   </td>
+                   <td> QUANTITY</td>
+                   <td> TOTAL   </td>
+               </tr>
+
+
+               {% for X in cart %}
+                <tr>
+                   <td> {{ X.product.title }}  </td>
+                   <td><img width="90" src="{{ X.product.image.url }}"></td>
+                   <td> {{ X.product.price }} </td>
+                    <td> {{ X.quantity }}
+                        <a href="{% url 'PRODUCTS:add_to_cart' X.product.pk %}" class="quantity"><img src="{% static 'images/up.png' %}" width="20"></a>
+                        <a href="{% url 'PRODUCTS:reduce_quantity_item' X.product.pk %}" class="quantity"><img src="{% static 'images/down.png' %}" width="20"></a></td>
+                    <td> {{ X.get_total_item_price }}</td>
+                    <td> </td>
+                    <td><a class="btn btn-danger" href="{% url 'PRODUCTS:remove_from_cart' X.product.pk %}">- X -</a></td>
+                {% endfor %}
+                </tr>
+               </table>
+
+                <a style="float:right; margin: 5px" class="btn btn-success" href="/checkout"> CHECKOUT</a>
+                <a style="float:right; margin: 5px" class="btn btn-outline-light" href="/shop">&#x2190; CONTINUE SHOPPING </a>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+</center>
+{% endblock %}

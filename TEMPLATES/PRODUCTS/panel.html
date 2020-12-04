@@ -1,0 +1,84 @@
+<!doctype html>
+
+{% extends 'inheritance.html' %}
+{% block content %}
+
+</br>
+</br>
+</br>
+<center>
+<h3 style="color:white"> ADMIN PANEL OVERVIEW </h3>
+</br>
+</br>
+</br>
+
+<div class="col-lg-6">
+    <table class="table table-dark" style="color:white">
+
+        <tr align="center">
+            <td><b>TOTAL ORDERS</b></td>
+            <td><b>TOTAL CUSTOMERS</b></td>
+            <td><b>TOTAL PAID </b></td>
+        </tr>
+        <tr align="center">
+            <td> {{ total_orders }} </td>
+            <td> {{ total_customers }} </td>
+            <td> {{ paid }}</td>
+        </tr>
+    </table>
+ </div>
+
+</br>
+
+<div class="col-lg-6">
+    <table class="table table-dark" style="color:white">
+
+        <tr align="center">
+            <td><b> CUSTOMER ID </b></td>
+            <td><b> NAME </b></td>
+            <td><b> EMAIL </b></td>
+            <td><b> PHONE </b></td>
+            <td><b> DATE </b></td>
+        </tr>
+
+    {% for each in customers %}
+        <tr align="center" style="color: white">
+            <td>{{ each.id }}</td>
+            <td>{{ each.name }} </td>
+            <td>{{ each.email }}  </td>
+            <td>{{ each.phone }}</td>
+            <td> {{ each.date }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+</br>
+
+<div class="col-lg-8">
+    <table class="table table-dark" style="color:white">
+        <tr align="center">
+            <td><b> ID </b></td>
+            <td><b> USER </b></td>
+            <td><b> DATE </b></td>
+            <td><b> STATUS </b></td>
+            <td><b> COMPLETE </b></td>
+            <td><b> TOTAL ($) </b></td>
+            <td><b> UNIQUE FILMS </b></td>
+        </tr>
+
+        {% for each in order %}
+        <tr align="center">
+            <td> {{ each.id }} </td>
+            <td> {{ each.user }} </td>
+            <td> {{ each.date }} </td>
+            <td> {{ each.status }} </td>
+            <td> {{ each.complete }} </td>
+            <td> {{ each.total }} </td>
+            <td> {{ each.items }} </td>
+         {% endfor %}
+        </tr>
+    </table>
+</div>
+</center>
+
+{% endblock %}
