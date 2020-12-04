@@ -1,6 +1,6 @@
 # Django_Ecommerce
 
-A 007 themed ecommerce site with full add to cart and checkout functionality. This is being created in Django with HTML and CSS front-end development.
+A 007 themed ecommerce site with add to cart and checkout functionality. This was created in Django with HTML and CSS for front-end development.
 
 ## Technologies
 
@@ -42,8 +42,8 @@ Two decorators are used for access purposes differentiating between admin and cu
 
     - unauthenticated_user
     - allowed_users
-
-
-## Screenshot Example (Film Page)
     
-![Spectre](https://user-images.githubusercontent.com/72507931/99554599-49de6e00-29b7-11eb-9681-7922c27d3a91.JPG)
+
+## Product Page Example
+
+![Slide1](https://user-images.githubusercontent.com/72507931/101178819-59111d00-3641-11eb-9b77-f66d05e98fe0.JPG)
