@@ -47,3 +47,17 @@ Two decorators are used for access purposes differentiating between admin and cu
 ## Product Page Example
 
 ![Slide1](https://user-images.githubusercontent.com/72507931/101178819-59111d00-3641-11eb-9b77-f66d05e98fe0.JPG)
+
+
+## Profile Page Example
+
+![Slide1](https://user-images.githubusercontent.com/72507931/101179560-4d722600-3642-11eb-99ad-9e67bcb004df.JPG)
+
+
+## Cart Page Example
+
+![Slide1](https://user-images.githubusercontent.com/72507931/101179925-cb363180-3642-11eb-81c0-8b7aa8dcdcb1.JPG)
+
+## Favourites Example
+
+![Slide1](https://user-images.githubusercontent.com/72507931/101180189-28ca7e00-3643-11eb-9e64-28c7379f9e96.JPG)
