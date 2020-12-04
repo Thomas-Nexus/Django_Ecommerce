@@ -31,24 +31,19 @@ Customers are able to complete the following actions:
    - Delete cart items
    - Checkout with the aformentioned items via completion of address and payment forms.
    
-Admin users are given specific permissions and are able to view an order/customer panel summarising all inputted data. 
 
-Admin users are not permitted to access the shopping cart.
-
-  
 <b>Permissions </b>
+
+Admin users are given specific permissions and are able to view an order/customer panel summarising all core data. 
+
+The navigation bar is structured to render different options depending on whether the user is logged in/out and if they are an admin/customer.
 
 Two decorators are used for access purposes differentiating between admin and customer groups:
 
     - unauthenticated_user
     - allowed_users
 
-A static folder is also used (including sub dirs of css, images and profile images) and implemented into settings.
 
-    
 ## Screenshot Example (Film Page)
     
 ![Spectre](https://user-images.githubusercontent.com/72507931/99554599-49de6e00-29b7-11eb-9681-7922c27d3a91.JPG)
-
-## Status
-
