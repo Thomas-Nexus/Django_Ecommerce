@@ -1,0 +1,34 @@
+{% extends 'inheritance.html' %}
+{% csrf_token %}
+{% block content %}
+{% load static %}
+
+</br>
+</br>
+</br>
+</br>
+    <center>
+        <h3 style="color:gold"> SUBMIT YOUR FAVOURITE </h3>
+    <hr>
+    </br>
+    </br>
+    </br>
+    <div class="col-lg-4">
+        <div class="box-element" id="form-wrapper">
+            <div class="form-group">
+            <form id="form" method="POST" style="color: gold">
+                {% csrf_token %}
+                {{ form }}
+                </br>
+                <input type="submit" value="SUBMIT" class="btn btn-success" style="color:black">
+            </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    </br>
+    </br>
+    </br>
+    </center>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'inheritance.html' %}
+{% load static %}
+{% block content %}
+
+<body style="color:white">
+</br>
+<hr>
+<center>
+<h3> NO TIME TO DIE </h3>
+<hr>
+<h6>Daniel Craig | 2021 | 25/25 </h6>
+<hr>
+<h6 style="color:gold"> £19.99 </h6>
+<hr>
+</br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vw2FOYjCz38" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr>
+
+{% if request.user.is_authenticated %}
+<a class='btn btn-outline-success' href="{% url 'PRODUCTS:add_to_cart' 1 %}"> ADD TO CART </a>
+{% else %}
+<a class='btn btn-outline-success' href="/login"> LOGIN OR CREATE AN ACCOUNT TO SHOP </a>
+{% endif%}
+
+</center>
+</body>
+{% endblock %}
+
+
